@@ -1,0 +1,48 @@
+.form-wraper{    
+    margin: 40px 0;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-inner-wrapper{
+    width: 60%;
+    /* border: 2px solid green; */
+}
+.formHeading{
+    color: #536dfe;    
+    margin: 30px 0;
+}
+
+.inputField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid royalblue; */
+    padding: 24px 24px;
+    margin-bottom: 24px;    
+}
+.buttonWraper{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;  
+    margin-top: 30px;
+}
+.buttonStep{
+    margin: 5px;
+    /* border: 3px solid red; */
+}
+.contactStep4{
+    display: flex;
+    flex-direction: column;
+}
+
+.submitForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}

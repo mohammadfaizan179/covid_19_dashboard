@@ -1,0 +1,9 @@
+Dependencies:
+    npm install @material-ui/core @material-ui/icons
+    npm install react-particles-js
+    npm install axios
+    npm i react-countup
+    npm i react-chartjs-2
+    npm i chart.js
+
+    

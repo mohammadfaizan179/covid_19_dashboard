@@ -1,0 +1,9 @@
+.footer-wraper{    
+    margin-top: 120px;
+    /* border: 2px solid green; */
+    background-color: #1a237e;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

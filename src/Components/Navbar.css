@@ -1,0 +1,12 @@
+.root-wraper{
+    /* flex-grow: 1; */
+    margin-bottom: 64px;
+}
+/* .active{
+    border-bottom: "8px solid red";
+} */
+.nav-item > .active{
+    border-bottom: 2px solid black;
+    /* color: ; */
+    /* font-size: 24px; */
+}
