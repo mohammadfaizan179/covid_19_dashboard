@@ -1,0 +1,40 @@
+
+.trackerCardsHeading{
+    /* border: 2px solid orange; */
+    color: #536dfe;
+    margin: 30px 0 0 0;    
+    text-align: center;
+}
+
+.countries{
+    /* border: 2px solid green; */
+    margin-bottom: 30px;    
+}
+.header{
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+.chartContainer{
+    /* border: 2px solid red; */
+    width: 65%;
+    margin-top: 50px !important;
+}
+
+@media(max-width: 960px){
+    .trackerCardsHeading{
+        font-size: 32px;    
+    }    
+}
+@media(max-width: 600px){
+    .trackerCardsHeading{
+        font-size: 26px;    
+    }    
+    .chartContainer{
+        /* border: 2px solid red; */
+        width: 90%;
+        margin-top: 50px !important;
+    }
+    .chartBar{
+        height: 250px !important;
+    }
+}

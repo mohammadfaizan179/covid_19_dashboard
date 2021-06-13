@@ -1,19 +1,13 @@
 import React from 'react';
 import { Grid, CardContent, Typography, Box, Card, makyStyles, makeStyles } from "@material-ui/core";
 import CountUp from "react-countup";
+import "../Tracker/Cases.css";
 
-const useStyles = makeStyles((theme)=>({
-    header:{
-        backgroundColor: "#e0e0e0",
-        padding: "10px"
-    },
-}))
 const CardComponent = ({cardTitle, value, desc, lastUpdate}) => {
-    const classes = useStyles();
     return (
     <>
         <Grid component={Card}  elevation={6} style={{margin:20, borderBottom: "10px solid #e0e0e0"}}>
-            <Box className={classes.header}>
+            <Box className="header">
                 <Typography variant="h5">{cardTitle}</Typography>
             </Box>
             <CardContent>

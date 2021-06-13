@@ -4,6 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import CardComponent from "./CardComponent";
 import Countries from "./Countries";
 import Chart from "./Chart";
+import "../Tracker/Cases.css";
+
 
 const useStyles = makeStyles((theme)=>({
     cardsWraper:{
@@ -13,21 +15,9 @@ const useStyles = makeStyles((theme)=>({
         flexDirection: "column", 
         alignItems: "center",
     },
-    trackerCardsHeading:{
-        // border: "2px solid orange",
-        color: "#536dfe",    
-        margin: "30px 0 0 0",    
-    },
     trackerUpdateHeading:{
         margin: "0 0 30px 0",    
     },
-    gridContainer:{
-        // border: "2px solid red"
-    },
-    countries:{
-        marginBottom: "30px",
-        //padding: "30px"
-    }
 
 
 
@@ -41,17 +31,15 @@ const Cards = ({data, handleCountryChange}) =>{
     return(
         <>
             <Box className={classes.cardsWraper}> 
-                <Typography variant="h4" className={classes.trackerCardsHeading}>Corona Virus Cases By Country</Typography>
+                <Typography variant="h4" className="trackerCardsHeading">Corona Virus Cases By Country</Typography>
                 <Typography className={classes.trackerUpdateHeading} variant="caption">Last Updated: { lastUpdate && new Date(lastUpdate).toDateString()}</Typography>    
-                <Box className={classes.countries}>
+                <Box className="countries">
                     <Countries handleCountryChange={handleCountryChange} />         
                 </Box>
             
                 <Grid 
-                    className={classes.gridContainer} 
                     container  
                     justify="center"
-                    spacing={0}
                 >
                     <CardComponent
                         cardTitle="infected"

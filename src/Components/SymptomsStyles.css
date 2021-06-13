@@ -38,7 +38,7 @@
         font-size: 26px !important;
     }
     .symptoms_grid_wrapre{
-        border: 2px solid green;
+        /* border: 2px solid green; */
         padding: 32px 10%;
     }
 }

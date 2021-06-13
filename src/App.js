@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import Particles from "react-particles-js";
-import Navbar from "./Components/Navbar";
+
+import NavbarComponent from "./Components/NavbarComponent";
 import Head from "./Components/Head";
 import About from "./Components/About";
 import Symptoms from "./Components/Symptoms";
@@ -55,7 +56,8 @@ const App = () => {
   return (
       <>
         <div>
-          <Navbar/>
+          {/* <Navbar/> */}
+          <NavbarComponent />
           <Head />
 
           <div data-aos="fade-up">

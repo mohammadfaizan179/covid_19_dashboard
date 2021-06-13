@@ -4,6 +4,7 @@
     background: url("../images/header/header.png");
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 91vh;
     width: 100% !important;
+    margin-top: 58px;
 }

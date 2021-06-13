@@ -3,25 +3,14 @@ import { Label } from '@material-ui/icons';
 import { Box } from "@material-ui/core";
 import { Bar } from "react-chartjs-2";
 import {makeStyles} from "@material-ui/core/styles";
-
-const useStyles = makeStyles({
-    container:{
-        width: "65%",
-        marginTop: 30,
-
-    }
-})
-
+import "../Tracker/Cases.css";
 
 const Chart = ({data:{confirmed, deaths, recovered}}) => {
-    const classes = useStyles();
-    console.log("Inside Chart");
-    // console.log(confirmed.value);
     return (
-        <Box className={classes.container}>
+        <Box className="chartContainer">
         {
             confirmed ? (
-            <Bar 
+            <Bar className="chartBar"
                 data={{
                     labels: ["Infected", "Recovered", "Deaths"],
                     datasets: [{
