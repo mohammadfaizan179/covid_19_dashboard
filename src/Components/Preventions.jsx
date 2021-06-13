@@ -12,7 +12,7 @@ const Preventions = () => {
     return (
         <div className="prevention-wraper" id="prevention">
             <Typography variant="h3" className="preventionHeading">Preventions Against Corona Virus</Typography>
-            <Grid container spacing={0} style={{padding: "32px 160px"}}>
+            <Grid container spacing={0} className="prevention_grid_wraper">
                 <Prevention pic={handwash} content="Wash you hands regularly for 20 seconds with soap and water or alcohal based hand rub" />
                 <Prevention pic={mask} content="Cover your nose and mouth with a disposable tissue or flexd elbow when you cough or sneeze" />
                 <Prevention pic={distance} content="Avoid close contact(1 meter or 4 feet) with people who are unwell" />

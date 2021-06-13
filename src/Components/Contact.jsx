@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import "./ContactStyles.css"
-import {Typography, Box, Paper, FormGroup, Button, FormControlLabel, Checkbox, Grid, Container, Stepper, Step, StepLabel, TextField} from "@material-ui/core";
+import {Typography, Box, Paper, Hidden, FormGroup, Button, FormControlLabel, Checkbox, Grid, Container, Stepper, Step, StepLabel, TextField} from "@material-ui/core";
 import ContactStep1 from  "./ContactStep1";
 import ContactStep2 from  "./ContactStep2";
 import ContactStep3 from  "./ContactStep3";
@@ -91,7 +91,8 @@ class Contact extends Component{
             <Typography variant="h3" className="questionsHeading">Contact Us</Typography>
             <Box className="form-inner-wrapper" p={4}>
                 <Paper component={Box} p={3} elevation={10}>
-                    <Stepper activeStep={activeStep}>
+                    <Hidden xsDown>
+                    <Stepper activeStep={activeStep} orientation="horizontal">
                         {
                             steps.map((step,index)=>{
                                 return(
@@ -102,15 +103,27 @@ class Contact extends Component{
                                 )
                             })
                         }
-
                     </Stepper>
-                    
+                    </Hidden>
+
+                    <Hidden smUp>
+                    <Stepper activeStep={activeStep} orientation="vertical">
+                        {
+                            steps.map((step,index)=>{
+                                return(
+                                    <Step>
+                                        <StepLabel>{step}</StepLabel>
+                                    </Step>
+                                        
+                                )
+                            })
+                        }
+                    </Stepper>
+                    </Hidden>
+
                     <Box className="inputField">
                         <form>{getStepContent(activeStep)}</form>   
                     </Box>
-                    
-                    
-            
                 </Paper>
             </Box>
         </Box>

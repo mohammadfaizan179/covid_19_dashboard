@@ -1,7 +1,7 @@
 
 .aboutContainer{
-    border: 2px solid green;
-    margin: 60px 0;
+    /* border: 2px solid black; */
+    padding: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     color: #536dfe;    
-    margin: 30px 0;
+    margin-bottom: 30px !important;
 }
 .rotatingPic{
     width: 50px;
@@ -20,6 +20,8 @@
     border-radius: 50%;
     animation: covidAnimation 4s infinite linear;
 }
+
+
 @keyframes covidAnimation{
     0%{
         transform: rotate(0deg);
@@ -28,9 +30,8 @@
         transform: rotate(360deg);
     }
 }
-
 .aboutImg{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 60%;
     margin: 30px;
     border-radius: 10px;
@@ -44,30 +45,35 @@
         transform: scale(1);
     }
 }
+
 .grid-wraper{
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 .grid-item-wraper{
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 .aboutText{
     text-align: justify;
-    padding: 0 60px ;    
-};
+    padding: 0 90px 0 60px;    
+}
 
-@media(max-width: 540px){
+
+@media(max-width: 540px){ 
     .aboutImg{
-        border: 2px solid red;
-        width: 60%;
+        width: 80%;
     }   
     .heading{
-        border: 2px solid black;
-        display: flex;
-        justify-content: center;
-        color: #536dfe;    
-        margin: 30px 0;
+        font-size: 35px !important;
+        margin-bottom: 0px !important;
+    }
+    .rotatingPic{
+        width: 35px;
+    } 
+    .aboutText{
+        padding: 0 30px ;    
     } 
 }
+

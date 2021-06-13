@@ -9,11 +9,12 @@ import cold from "../images/symptoms/cold.jpg";
 import fever from "../images/symptoms/fever.jpg";
 import tired from "../images/symptoms/tired.png";
 
+
 const Symptoms = () => {
     return (
         <div className="symptoms-wrapre" id="symptoms">
             <Typography variant="h3" className="symptomsHeading">Corona Virus Symptoms</Typography>
-            <Grid container spacing={0} style={{padding: "32px 160px"}}>
+            <Grid container spacing={0} className="symptoms_grid_wrapre">
                 <Symptom title="Cough" pic={cough}/>
                 <Symptom title="Fever" pic={fever}/>
                 <Symptom title="Runny Nose" pic={runnyNose}/>

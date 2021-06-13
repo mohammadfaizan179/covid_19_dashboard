@@ -8,7 +8,7 @@ const Symptom = ({pic, title}) => {
             <Grid item md={4} sm={6} xs={12}>
                 <Box className="itemContainerSymptoms">
                     <img src={pic} alt="cough" width={120} height={160} />
-                    <Typography variant="caption" color="textSecondary">{title}</Typography>
+                    <Typography variant="body1" color="textSecondary">{title}</Typography>
                 </Box>
             </Grid>    
         </>
