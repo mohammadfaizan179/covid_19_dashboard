@@ -1,18 +1,30 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./NavbarComponent.css";
 import "bootstrap/dist/css/bootstrap.css";
 import {Navbar, Nav} from "react-bootstrap";
-import {Typography} from "@material-ui/core";
+import {Typography, Button} from "@material-ui/core";
 import NavbarComponentSub from "./NavbarComponentSub";
-// import logo from "../Images/logo.png"
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
 
 const NavbarComponent = () => {
+    const [navbar, setNavbar] = useState(false);
+    
+    const changeBackground = () =>{
+        console.log(window.scrollY);
+        if(window.scrollY > 560){
+            setNavbar(true);
+        }else{
+            setNavbar(false); 
+        }
+    };
+    window.addEventListener("scroll", changeBackground);
+     
     return (
         <>        
-            <Navbar className="navbarWarper" variant="dark" fixed="top" expand="md">
+            <Navbar className={navbar ? "navbarWarper active" : "navbarWarper"} variant="dark" fixed="top" expand="md">
                   <Navbar.Brand style={{flexGrow: 30}} >
-                        {/* <img src={logo} alt="logo" style={{marginLeft:"60px"}}/> */}
-                        <Typography variant="h5" style={{marginLeft:"20px", fontFamily:"cursive"}}>Covid-19</Typography>
+                        <Typography variant="h5" style={{marginLeft:"20px", fontFamily:"cursive"}}><span><Button component="a" href="https://mohammadfaizan179.github.io/portfolio/" className="portfolio_link"><ArrowBackIcon /></Button></span> Covid-19</Typography>
                   </Navbar.Brand>
                   <Navbar.Toggle style={{marginRight:"20px"}}/>
                   <Navbar.Collapse>

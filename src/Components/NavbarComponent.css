@@ -8,9 +8,17 @@ html{
     overflow-x:hidden;
 }
 .navbarWarper{
+    background-color: none;
+}
+.navbarWarper.active{
     background-color:#3f51b5;
+
 }
 
+.portfolio_link:hover{
+    /* color:greenyellow; */
+    color: #daa520;
+}
 .navLink{
     display: flex;
     justify-content: center;
@@ -64,6 +72,11 @@ html{
     body{
         width:100%;
         overflow-x:hidden;
+    }
+    .navLink *{
+        width: 100%;
+        color: red !important;
+        /* background-color: rgba(0, 0, 0, 0.3) !important;      */
     }    
 }
 @media(min-width: 960px){    
