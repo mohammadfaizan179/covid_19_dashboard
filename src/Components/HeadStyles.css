@@ -1,12 +1,9 @@
-*{
-    margin: 0px ;
-}
 .header-wrapre{
+    /* border: 2px solid red; */
     position: relative;
     background: url("../images/header/header.png");
     background-size: cover;
     background-position: center;
     height: 90vh;
-    /* border: 2px solid red; */
-    /* width: 100vw; */
+    width: 100% !important;
 }

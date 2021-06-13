@@ -1,18 +1,18 @@
 
 .aboutContainer{
+    border: 2px solid green;
     margin: 60px 0;
-    /* border: 2px solid green; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .heading{
+    /* border: 2px solid orangered; */
     display: flex;
     justify-content: center;
     color: #536dfe;    
     margin: 30px 0;
-    /* border: 2px solid orangered; */
 }
 .rotatingPic{
     width: 50px;
@@ -30,10 +30,10 @@
 }
 
 .aboutImg{
+    border: 2px solid green;
     width: 60%;
-    /* margin: 30px; */
+    margin: 30px;
     border-radius: 10px;
-    /* border: 2px solid green; */
     animation: aboutSideImg 3s infinite alternate ease;
 }
 @keyframes aboutSideImg{
@@ -45,22 +45,29 @@
     }
 }
 .grid-wraper{
-    /* border: 2px solid green; */
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
-    margin: 30px 0;
+    border: 2px solid green;
 }
 .grid-item-wraper{
-/* justify-content: center; */
-    /* align-items: center; */
+    border: 2px solid orange;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    /* border: 2px solid green; */
 }
 .aboutText{
     text-align: justify;
-    padding-right: 120px ;    
-    /* margin: 0 80px 0 0; */
-    /* border: 2px solid green; */
+    padding: 0 60px ;    
 };
+
+@media(max-width: 540px){
+    .aboutImg{
+        border: 2px solid red;
+        width: 60%;
+    }   
+    .heading{
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        color: #536dfe;    
+        margin: 30px 0;
+    } 
+}

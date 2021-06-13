@@ -1,12 +1,19 @@
+
 .root-wraper{
-    /* flex-grow: 1; */
     margin-bottom: 64px;
 }
-/* .active{
-    border-bottom: "8px solid red";
-} */
+
 .nav-item > .active{
     border-bottom: 2px solid black;
-    /* color: ; */
+    color: black;
+    font-weight: 600;
     /* font-size: 24px; */
+}
+html, body{
+    width:100%;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
 }
