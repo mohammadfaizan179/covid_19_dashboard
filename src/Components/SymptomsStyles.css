@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&display=swap');
+
 .symptoms-wrapre{    
     margin: 40px 0;
     /* border: 2px solid green; */
@@ -13,7 +15,9 @@
     text-align: center;
     color: #536dfe;    
     margin: 30px 0;
+    font-family: cursive !important;
 }
+
 .itemContainerSymptoms{
     display: flex;
     flex-direction: column;
@@ -26,6 +30,10 @@
 .itemContainerSymptoms:hover{
     transform: scale(1.2);
     /* cursor: zoom-in; */
+}
+
+.picCaption{
+    font-family: 'Libre Baskerville', serif;
 }
 
 @media(max-width: 960px){ 

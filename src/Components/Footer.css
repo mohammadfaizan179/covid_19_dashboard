@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&display=swap');
 .footer-wraper{    
     margin-top: 120px;
     /* border: 2px solid green; */
@@ -6,4 +7,7 @@
     display: flex;
     text-align: center;
     justify-content: center;
+}
+.footer-wraper *{    
+    font-family: 'Libre Baskerville', serif;
 }

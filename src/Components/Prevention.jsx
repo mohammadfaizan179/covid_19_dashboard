@@ -7,7 +7,7 @@ const Prevention = ({pic, content}) => {
             <Grid item md={4} sm={6} xs={12}>
                 <Box className="itemContainer">
                     <img src={pic} alt="cough" width={120} height={160} />
-                    <Typography variant="body1" color="textSecondary" style={{paddingTop:"10px"}}>{content}</Typography>
+                    <Typography className="prePicText" variant="body1" color="textSecondary" style={{paddingTop:"10px"}}>{content}</Typography>
                 </Box>
             </Grid>    
         </>

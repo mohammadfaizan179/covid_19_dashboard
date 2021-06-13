@@ -1,6 +1,5 @@
 import React,{useEffect, useState} from 'react';
 import Particles from "react-particles-js";
-
 import NavbarComponent from "./Components/NavbarComponent";
 import Head from "./Components/Head";
 import About from "./Components/About";

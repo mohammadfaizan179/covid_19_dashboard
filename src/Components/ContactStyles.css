@@ -56,7 +56,7 @@
 }
 @media(max-width: 600px){
     .form-inner-wrapper{
-        width: 80%;
+        width: 95%;
     }
     .buttonWraper{
         justify-content: center;  
