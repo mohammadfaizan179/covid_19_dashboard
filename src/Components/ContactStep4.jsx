@@ -4,36 +4,12 @@ import "./ContactStyles.css";
 import { PhoneAndroid } from '@material-ui/icons';
 
 class ContactStep4 extends Component {
-    // state={
-    //     open: false
-    // }
-    // handleToggle = () =>{
-    //     this.setState({open: !this.state.open})
-    // }
     render() {
-        // const {open} = this.state;
         const {handleNext, handleBack, values, handleChange} = this.props;
         const {firstName, lastName, age, dob, gender, phone, email, address, symptoms, healthCondition} = values;
         
         return (
             <>
-                {/* <Dialog
-                    open = {open}
-                    onClose = {this.handleToggle}
-                >
-                    <DialogTitle>
-                        Create a New Exerceise
-                    </DialogTitle>
-                    <DialogContent>
-                        <DialogContentText>
-                            Please fill out the form below
-                        </DialogContentText>
-                    </DialogContent>
-                    <DialogActions>
-                        <Button variant="contained" color="primary">Close</Button>
-                    </DialogActions>
-                </Dialog> */}
-                    {/* <Grid container> */}
                 <Box className="contactStep4">
                         <Grid item>
                             <Typography variant="subtitle1"><strong> First Name:</strong>{firstName}</Typography>

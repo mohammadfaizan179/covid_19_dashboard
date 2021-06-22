@@ -1,5 +1,4 @@
 import React,{useEffect, useState} from 'react';
-import Particles from "react-particles-js";
 import NavbarComponent from "./Components/NavbarComponent";
 import Head from "./Components/Head";
 import About from "./Components/About";
@@ -15,7 +14,6 @@ import {fetchData} from "./services/api";
 import {makeStyles} from "@material-ui/core/styles";
 
 import Cards from "./Components/Tracker/Cards";
-// import Countries from "./Components/Tracker/Countries";
 import Chart from "./Components/Tracker/Chart";
 import logo from "./images/logo.jpg";
 import {Typography, Box} from "@material-ui/core";

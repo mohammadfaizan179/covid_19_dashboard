@@ -10,10 +10,7 @@
     /* border: 2px solid green; */
     width: 60%;
 }
-.stepper{
-    /* border: 2px solid orange; */
-    /* width: 80%; */
-}
+
 .inputField{
     display: flex;
     justify-content: center;

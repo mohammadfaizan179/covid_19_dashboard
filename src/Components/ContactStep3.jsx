@@ -9,9 +9,6 @@ class ContactStep3 extends Component {
         return (
             <>
                 <Grid container spacing={3}>
-                    {/* <Grid item xs={12} >
-                    
-                    </Grid> */}
                     <Grid item xs={12}>
                     <Typography color="textSecondary">Symptoms</Typography>
                         <FormGroup row>

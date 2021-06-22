@@ -75,7 +75,7 @@ html{
     }
     .navLink *{
         width: 100%;
-        color: red !important;
+        color: white !important;
         /* background-color: rgba(0, 0, 0, 0.3) !important;      */
     }    
 }

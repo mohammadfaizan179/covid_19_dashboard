@@ -11,7 +11,6 @@ const NavbarComponent = () => {
     const [navbar, setNavbar] = useState(false);
     
     const changeBackground = () =>{
-        console.log(window.scrollY);
         if(window.scrollY > 560){
             setNavbar(true);
         }else{
@@ -30,7 +29,6 @@ const NavbarComponent = () => {
                   <Navbar.Collapse>
                     <div className="navLink">
                     <Nav>
-                        {/* <NavbarComponentSub title="Home" to="covid" offset={-200}/> */}
                         <NavbarComponentSub title="About" to="covid" offset={-120}/>
                         <NavbarComponentSub title="Symptoms" to="symptoms" offset={-120}/>
                         <NavbarComponentSub title="Preventions" to="prevention" offset={-120}/>
