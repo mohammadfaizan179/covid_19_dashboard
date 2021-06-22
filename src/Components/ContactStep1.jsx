@@ -12,18 +12,11 @@ const options = [
   ];
 
 class ContactStep1 extends Component {
-    // state = {
-    //     myGender: ""
-    // }
 
     render() {
-        // const {gender}=this.state;
         const {handleNext, handleBack, values, handleChange} = this.props;
         const {activeStep, firstName, lastName, age, dob, gender} = values;
         
-        // const handleChangeGender = (event) => {
-        //     this.setState({myGender: event.target.value});
-        // };
         return (
             <>
                 <Grid container spacing={3}>

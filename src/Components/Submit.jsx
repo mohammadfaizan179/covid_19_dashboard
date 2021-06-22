@@ -9,9 +9,6 @@ export class Submit extends Component {
         const {handleNext, handleBack, values, handleChange} = this.props;
         const {activeStep, firstName, lastName, age, dob, gender, phone, email, address} = values;
         
-        // const clear = () =>{
-        //     activeStep = activeStep -4;
-        // }
         return (
             <>
                 <Box className="submitForm">
